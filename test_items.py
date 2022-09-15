@@ -17,3 +17,5 @@ def test_if_add_to_cart_button_is_available(browser):
     except TimeoutException:
         button = None
     assert button, 'The button is not available on this page'
+
+
