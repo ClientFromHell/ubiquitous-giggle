@@ -15,3 +15,5 @@ def browser(request):
     browser = webdriver.Chrome(options=options)
     yield browser
     browser.quit()
+
+
