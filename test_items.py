@@ -12,7 +12,7 @@ def test_if_add_to_cart_button_is_available(browser):
     time.sleep(3)
     try:
         button = WebDriverWait(browser, 3).until(
-            EC.visibility_of_all_elements_located((By.CLASS_NAME, "1btn-add-to-basket"))
+            EC.visibility_of_all_elements_located((By.CLASS_NAME, "btn-add-to-basket"))
         )
     except (TimeoutException, InvalidSelectorException):
         button = None
