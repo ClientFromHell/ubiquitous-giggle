@@ -17,9 +17,5 @@ def test_if_add_to_cart_button_is_available(browser):
     except (TimeoutException, InvalidSelectorException):
         button = None
     assert button, 'The button is not available on this page'
-    #
-    #
-    # time.sleep(1)
-    # browser.implicitly_wait(5)
-    # button = browser.find_elements(By.CSS_SELECTOR, '.a1dd-to-basket>button')
-    # assert button, "NOT FOUND"
+
+
