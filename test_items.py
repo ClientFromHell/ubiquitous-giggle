@@ -9,7 +9,7 @@ url = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
 def test_if_add_to_cart_button_is_available(browser):
     browser.get(url)
-    time.sleep(3)
+    # time.sleep(30) # Uncomment for your test;)
     try:
         button = WebDriverWait(browser, 3).until(
             EC.visibility_of_all_elements_located((By.CLASS_NAME, "btn-add-to-basket"))
